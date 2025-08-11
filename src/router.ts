@@ -6,7 +6,7 @@ import cors from 'cors';
 import path from 'path';
 import express from 'express';
 
-// import { User } from './models'
+import { User } from './models'
 
 class UserMock {
 
@@ -23,7 +23,7 @@ class UserMock {
   }
 }
 
-const User = UserMock;
+// const User = UserMock;
 
 
 const getRouter = () => {
