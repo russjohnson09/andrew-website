@@ -20,6 +20,10 @@ netlify dev
 npx netlify init
 
 
+npm install -g npm-check-updates
+
+
+
 
 Project Name:  andrew-api
 Project Url:   https://andrew-api.netlify.app
