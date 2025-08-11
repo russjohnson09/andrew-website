@@ -15,7 +15,7 @@
 # netlify functions are on demand / serverless
 # so any files need to be listed if included
 # include sqlite and the react build.
-  included_files = ["database.sqlite", "react-app/build/**]
+  included_files = ["database.sqlite", "react-app/build/**"]
 [[redirects]]
   force = true
   from = "/*"

@@ -1,6 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
+// TODO query users and list them out.
+
+
+console.log(`react environment`)
+console.log(process.env);
+
+
 function App() {
   return (
     <div className="App">

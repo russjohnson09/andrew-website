@@ -70,7 +70,9 @@ const getRouter = () => {
 
   router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
   router.post('/', (req, res) => res.json({ postBody: req.body }));
-  // router.use(express.static(path.join(__dirname, '../react-app/build')));
+  
+  
+  router.use(express.static(path.join(__dirname, '../react-app/build')));
 
   return router;
 }
