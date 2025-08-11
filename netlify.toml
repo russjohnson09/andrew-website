@@ -30,7 +30,7 @@
 
 #https://answers.netlify.com/t/redirects-using-create-react-app/89676
 [[redirects]]
-  # force = true
+  force = false
   from = "/*"
   status = 200
   to = "/react-app/build/index.html"
