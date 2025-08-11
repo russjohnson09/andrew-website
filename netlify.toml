@@ -14,7 +14,8 @@
   node_bundler = "esbuild"
 # netlify functions are on demand / serverless
 # so any files need to be listed if included
-  included_files = ["database.sqlite"]
+# include sqlite and the react build.
+  included_files = ["database.sqlite", "react-app/build/**]
 [[redirects]]
   force = true
   from = "/*"
