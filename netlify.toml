@@ -35,3 +35,10 @@
   status = 200
   to = "/react-app/build/index.html"
 
+
+[[redirects]]
+  force = false
+  from = "/*"
+  status = 200
+  to = "/react-app/build/:splat"
+
