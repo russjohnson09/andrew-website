@@ -3,7 +3,7 @@
   functions = "functions"
 
 
-[[redirects]]
-  force = true
-  from = "/*"
-  status = 200
+#[[redirects]]
+#  force = true
+#  from = "/*"
+#  status = 200

@@ -10,7 +10,9 @@ const {router} = require('../src/router')
 app.use(bodyParser.json());
 
 
-app.use('/.netlify/functions/server', router);  // path must route to lambda
+app.use('/.netlify/functions', router);  // path must route to lambda
+// app.use('/.netlify/functions/server', router);  // path must route to lambda
+
 // app.use('/', router);  // path must route to lambda
 // 
 
