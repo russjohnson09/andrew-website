@@ -26,7 +26,9 @@ const {router} = require('../src/router')
 
 // https://answers.netlify.com/t/deploying-express-server-on-netlify-with-lambda-functions/19535
 app.use(bodyParser.json());
-app.use('/.netlify/functions/server', router);  // path must route to lambda
+// app.use('/.netlify/functions/server', router);  // path must route to lambda
+app.use('/.netlify/express/server', router);  // path must route to lambda
+
 app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
 
 
