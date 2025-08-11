@@ -23,15 +23,15 @@
 
 [[redirects]]
   force = true
-  from = "/*"
-  status = 200
-  to = "/react-app/build"
-
-
-
-
-[[redirects]]
-  force = true
   from = "/api/*"
   status = 200
   to = "/.netlify/functions/api/:splat"
+
+
+#https://answers.netlify.com/t/redirects-using-create-react-app/89676
+[[redirects]]
+  # force = true
+  from = "/*"
+  status = 200
+  to = "/react-app/build/index.html"
+
