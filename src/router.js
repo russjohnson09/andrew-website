@@ -2,11 +2,18 @@ const express = require('express');
 const path = require('path');
 
 const router = express.Router();
+const cors = require('cors');
 
 const {User } = require('./models');
 
 
 const started = new Date();
+
+// Allows for the API to be requested from any domain.
+// Cross-domain directly from the browser is disabled by default to
+// prevent malicious attacks.
+router.use(cors());
+
 
 // router.get('/', (req, res) => {
 //   res.writeHead(200, { 'Content-Type': 'text/html' });
