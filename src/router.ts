@@ -1,10 +1,29 @@
-const express = require('express');
-const path = require('path');
+// const express = require('express');
+// const path = require('path');
 
 
-const cors = require('cors');
+import cors from 'cors';
+import path from 'path';
+import express from 'express';
 
-import { User } from './models'
+// import { User } from './models'
+
+class UserMock {
+
+  constructor() {
+
+  }
+
+  static findAll(params?: any) {
+    
+  }
+
+  save() {
+
+  }
+}
+
+const User = UserMock;
 
 
 const getRouter = () => {
@@ -51,7 +70,7 @@ const getRouter = () => {
 
   router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
   router.post('/', (req, res) => res.json({ postBody: req.body }));
-  router.use(express.static(path.join(__dirname, '../react-app/build')));
+  // router.use(express.static(path.join(__dirname, '../react-app/build')));
 
 }
 
