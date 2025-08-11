@@ -23,6 +23,10 @@ npx netlify init
 npm install -g npm-check-updates
 
 
+ncu -i
+
+https://github.com/WiseLibs/better-sqlite3/issues/1352
+https://answers.netlify.com/t/better-sqlite3-no-longer-installing/142578/2
 
 
 Project Name:  andrew-api
