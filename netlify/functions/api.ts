@@ -17,12 +17,20 @@
 import express, { Router } from "express";
 import serverless from "serverless-http";
 // const { router } = require('../../src/router');
-import { router } from '../../src/router';
+// import { router } from '../../src/router';
+
+import * as cors from 'cors';
+
+
 const api = express();
 
-// const router = Router();
+
+const router = Router();
+
+router.use(cors());
+
 router.get("/hello", (req, res) => res.send("Hello World!"));
 
-api.use("/api/", router);
+api.use("/", router);
 
 export const handler = serverless(api);
