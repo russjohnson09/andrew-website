@@ -14,6 +14,9 @@ https://github.com/netlify/cli/releases
 
 npm install -g netlify-cli@22
 
+netlify dev
+
+
 npx netlify init
 
 
