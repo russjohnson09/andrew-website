@@ -6,7 +6,7 @@
     "build2": "netlify-lambda build express",
     "build": "echo 1",
     "build-react": "cd react-app && npm install && npm run build",
-    "start": "ts-node-dev server-local.ts"
+    "start": "ts-node-dev src/index.ts"
   },
   "dependencies": {
     "@netlify/functions": "^4.2.1",

@@ -14,19 +14,17 @@
 
 // https://docs.netlify.com/build/frameworks/framework-setup-guides/express/
 // https://docs.netlify.com/build/functions/get-started/?data-tab=TypeScript
-import express, { Router } from "express";
+import express from "express";
 import serverless from "serverless-http";
-// const { router } = require('../../src/router');
 import { router } from '../../src/router';
 
 
 // https://answers.netlify.com/t/better-sqlite3-causing-500-server-error/127568/2
-const api = express();
+const app = express();
 
 
-// const router = Router();
 
+app.use("/", router);
+app.use(express.static('react-app/build/'));
 
-api.use("/", router);
-
-export const handler = serverless(api);
+export const handler = serverless(app);

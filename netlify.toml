@@ -1,3 +1,7 @@
+
+# limitation of the functions
+# it looks like react-app/build does need to be
+# tracked in the git repo?
 [build]
   command = "npm install && npm run build"
   # functions = "functions"

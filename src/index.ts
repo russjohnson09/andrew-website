@@ -13,3 +13,6 @@ app.use('/', router);
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+// functions includes this as well.
+app.use(express.static('react-app/build/'));
