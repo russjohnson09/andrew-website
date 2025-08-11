@@ -1,0 +1,10 @@
+[build]
+  command = "npm install && npm run build"
+  # functions = "functions"
+  functions="express"
+
+
+#[[redirects]]
+#  force = true
+#  from = "/*"
+#  status = 200
