@@ -28,9 +28,19 @@ function App() {
         </a>
 
         <a
+                  className="App-link"
+
           href="/static-html"
         >
           static-html
+        </a>
+
+        <a
+                  className="App-link"
+
+          href="/api/users"
+        >
+          get users api-request
         </a>
       </header>
     </div>
