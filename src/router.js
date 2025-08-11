@@ -35,9 +35,7 @@ router.get('/user-add', async (req, res) => {
 });
 
 router.get('/users', async (req, res) => {
-  const user = new User();
-  await user.save();
-  const users = User.findAll();
+  const users = await User.findAll();
   res.json(users);
 });
 
