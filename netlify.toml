@@ -8,7 +8,7 @@
 [functions]
   external_node_modules = ["express", "sqlite3"]
   node_bundler = "esbuild"
-  include_files = ["sequelize.sqlite"]
+  included_files = ["sequelize.sqlite"]
 [[redirects]]
   force = true
   from = "/*"
