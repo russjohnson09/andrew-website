@@ -21,6 +21,8 @@ import { router } from '../../src/router';
 
 import cors from 'cors';
 
+// https://answers.netlify.com/t/better-sqlite3-causing-500-server-error/127568/2
+
 
 const api = express();
 

@@ -5,7 +5,7 @@
 
 #https://docs.netlify.com/build/functions/optional-configuration/?data-tab=TypeScript
 [functions]
-  external_node_modules = ["express"]
+  external_node_modules = ["express", "sqlite3"]
   node_bundler = "esbuild"
 [[redirects]]
   force = true
