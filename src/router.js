@@ -27,6 +27,12 @@ router.get('/test', (req, res) => {
   res.end();
 });
 
+router.get('/api/hello', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write('<h1>Hello</h1>');
+  res.end();
+});
+
 // TODO add some version maybe the git commit?
 router.get('/status', (req, res) => {
   res.json({
