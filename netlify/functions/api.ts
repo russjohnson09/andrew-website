@@ -19,17 +19,12 @@ import serverless from "serverless-http";
 // const { router } = require('../../src/router');
 import { router } from '../../src/router';
 
-import cors from 'cors';
 
 // https://answers.netlify.com/t/better-sqlite3-causing-500-server-error/127568/2
-
-
 const api = express();
 
 
 // const router = Router();
-
-router.use(cors());
 
 
 api.use("/", router);

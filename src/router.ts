@@ -72,6 +72,7 @@ const getRouter = () => {
   router.post('/', (req, res) => res.json({ postBody: req.body }));
   // router.use(express.static(path.join(__dirname, '../react-app/build')));
 
+  return router;
 }
 
 
