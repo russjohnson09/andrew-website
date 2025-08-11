@@ -3,12 +3,12 @@
 const { Sequelize, DataTypes } = require('sequelize');
 // const { SqliteDialect } = require('@sequelize/sqlite3');
 
-const sequelize = new Sequelize('sqlite::memory:');
+// const sequelize = new Sequelize('sqlite::memory:');
 
-// const sequelize = new Sequelize({
-//   dialect: 'sqlite', // SqliteDialect,
-//   storage: 'sequelize.sqlite',
-// });
+const sequelize = new Sequelize({
+  dialect: 'sqlite', // SqliteDialect,
+  storage: 'sequelize.sqlite',
+});
 const User = sequelize.define('User', {
   username: DataTypes.STRING,
   birthday: DataTypes.DATE,
