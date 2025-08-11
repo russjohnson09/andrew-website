@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const {router} = require('../src/router')
 
 
+// https://docs.netlify.com/api-and-cli-guides/cli-guides/manage-functions/
 app.use(bodyParser.json());
 
 
