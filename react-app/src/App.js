@@ -9,6 +9,8 @@ console.log(process.env);
 
 
 function App() {
+  console.log('app');
+  console.log(process.env);
   return (
     <div className="App">
       <header className="App-header">
