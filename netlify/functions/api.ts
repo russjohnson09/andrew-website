@@ -11,6 +11,7 @@ const app = express();
 
 
 app.use("/", router);
+// handled by netlify.toml redirects
 // app.use(express.static('react-app/build/', {
 //       setHeaders: (res, path) => {
 //     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');

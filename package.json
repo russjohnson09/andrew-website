@@ -4,8 +4,8 @@
   "main": "functions/server.js",
   "scripts": {
     "build2": "netlify-lambda build express",
-    "build": "echo 1",
-    "build-react": "cd react-app && npm install && npm run build",
+    "build3": "echo 1",
+    "build": "cd react-app && npm install && npm run build",
     "start": "ts-node-dev src/index.ts"
   },
   "dependencies": {
