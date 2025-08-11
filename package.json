@@ -25,7 +25,9 @@
   "dependencies": {
     "@netlify/functions": "^4.2.1",
     "@types/express": "^5.0.3",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "body-parser": "^1.19.0",
