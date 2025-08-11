@@ -83,7 +83,7 @@ const getRouterSimple = () => {
     return router;
 }
 
-const router = getRouterSimple();
+const router = getRouter();
 
 export {
   router

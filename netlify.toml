@@ -4,9 +4,11 @@
   # functions="express"
 
 #https://docs.netlify.com/build/functions/optional-configuration/?data-tab=TypeScript
+#https://www.netlify.com/blog/2021/08/12/how-to-include-files-in-netlify-serverless-functions/
 [functions]
   external_node_modules = ["express", "sqlite3"]
   node_bundler = "esbuild"
+  include_files = ["sequelize.sqlite"]
 [[redirects]]
   force = true
   from = "/*"
