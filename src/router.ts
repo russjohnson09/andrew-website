@@ -8,6 +8,8 @@ import express from 'express';
 
 import { User } from './models'
 
+import { router as apiRouter } from './api/router'
+
 class UserMock {
 
   constructor() {
@@ -35,6 +37,8 @@ const getRouter = () => {
   // Cross-domain directly from the browser is disabled by default to
   // prevent malicious attacks.
   router.use(cors());
+
+  router.use('/api',apiRouter);
 
   router.get('/test', (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
