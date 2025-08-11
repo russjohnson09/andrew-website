@@ -12,14 +12,15 @@
 // export const handler = serverless(api);
 
 
+// https://docs.netlify.com/build/frameworks/framework-setup-guides/express/
 import express, { Router } from "express";
 import serverless from "serverless-http";
-const { router } = require('../../src/router');
+// const { router } = require('../../src/router');
 
 const api = express();
 
-// const router = Router();
-// router.get("/hello", (req, res) => res.send("Hello World!"));
+const router = Router();
+router.get("/hello", (req, res) => res.send("Hello World!"));
 
 api.use("/api/", router);
 
