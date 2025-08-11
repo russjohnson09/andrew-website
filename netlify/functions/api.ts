@@ -19,7 +19,7 @@ import serverless from "serverless-http";
 // const { router } = require('../../src/router');
 // import { router } from '../../src/router';
 
-import * as cors from 'cors';
+import cors from 'cors';
 
 
 const api = express();

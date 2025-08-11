@@ -5,21 +5,21 @@
   "scripts": {
     "build2": "netlify-lambda build express",
     "build": "echo 1",
-    "start": "nodemon server-local.js"
+    "start": "ts-node server-local.ts"
   },
   "dependencies": {
     "@netlify/functions": "^4.2.1",
     "@types/express": "^5.0.3",
-    "cors": "^2.8.5",
-    "sequelize": "^6.37.7",
-    "sqlite3": "^5.1.7",
+    "@types/node": "^24.2.1",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "netlify-lambda": "^1.6.3",
     "nodemon": "^1.19.2",
-    "serverless-http": "^2.7.0"
-  },
-  "devDependencies": {
-
+    "sequelize": "^6.37.7",
+    "serverless-http": "^2.7.0",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
