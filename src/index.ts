@@ -15,4 +15,9 @@ app.listen(port, () => {
 });
 
 // functions includes this as well.
-app.use(express.static('react-app/build/'));
+app.use(express.static('react-app/build/', {
+      setHeaders: (res, path) => {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.set('Expires', '0');
+  }
+}));

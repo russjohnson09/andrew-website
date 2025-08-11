@@ -1,17 +1,3 @@
-// const express = require("express");
-// const serverless = require("serverless-http");
-
-
-// const api = express();
-
-// // const router = Router();
-// // router.get("/hello", (req, res) => res.send("Hello World!"));
-
-// api.use("/", router);
-
-// export const handler = serverless(api);
-
-
 // https://docs.netlify.com/build/frameworks/framework-setup-guides/express/
 // https://docs.netlify.com/build/functions/get-started/?data-tab=TypeScript
 import express from "express";
@@ -25,6 +11,11 @@ const app = express();
 
 
 app.use("/", router);
-app.use(express.static('react-app/build/'));
+// app.use(express.static('react-app/build/', {
+//       setHeaders: (res, path) => {
+//     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+//     res.set('Expires', '0');
+//   }
+// }));
 
 export const handler = serverless(app);

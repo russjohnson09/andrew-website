@@ -20,8 +20,18 @@
 # so any files need to be listed if included
 # include sqlite and the react build.
   included_files = ["database.sqlite", "react-app/build/**"]
+
 [[redirects]]
   force = true
   from = "/*"
+  status = 200
+  to = "/react-app/build"
+
+
+
+
+[[redirects]]
+  force = true
+  from = "/api/*"
   status = 200
   to = "/.netlify/functions/api/:splat"

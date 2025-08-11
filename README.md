@@ -1,3 +1,35 @@
+
+
+
+Deploying changes
+
+
+Make sure to run `npm run build` this will include any react changes.
+
+After `npm run build` commit any changes in react-app/build.
+
+
+Any records inserted into database.sqlite will be preserved if committed. Deploying will reset any records added while the server was active.
+
+This is okay if the primary use for this server is testing.
+
+
+
+# Netlify
+https://app.netlify.com/projects/andrew-api/configuration/functions#content
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a problem with the Netlify CLI, not with your application.
 
 
