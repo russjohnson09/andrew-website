@@ -1,4 +1,9 @@
+src/ contains the typescript / nodejs / express code.
 
+
+It is using sequelize as its ORM and the database is in database.sqlite.
+
+This database does not persist in between deploys.
 
 
 Deploying changes

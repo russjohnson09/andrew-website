@@ -26,6 +26,12 @@ function App() {
         >
           Learn React
         </a>
+
+        <a
+          href="/static-html"
+        >
+          static-html
+        </a>
       </header>
     </div>
   );
