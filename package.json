@@ -5,7 +5,7 @@
   "main": "functions/server.js",
   "scripts": {
     "build": "echo 1",
-    "start": "nodemon functions/server.js"
+    "start": "nodemon server-local.js"
   },
   "repository": {
     "type": "git",
