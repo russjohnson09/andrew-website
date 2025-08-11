@@ -1,6 +1,7 @@
 [build]
   command = "npm install && npm run build"
-  functions = "functions"
+  # functions = "functions"
+  functions="express"
 
 
 #[[redirects]]
