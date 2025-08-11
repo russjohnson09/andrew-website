@@ -3,6 +3,7 @@
   # functions = "functions"
   # functions="express"
 
+#https://docs.netlify.com/build/functions/optional-configuration/?data-tab=TypeScript
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
