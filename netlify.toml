@@ -27,6 +27,13 @@
   status = 200
   to = "/.netlify/functions/api/:splat"
 
+#https://docs.netlify.com/manage/routing/redirects/redirect-options/#splats
+[[redirects]]
+  force = false
+  from = "/*"
+  status = 200
+  to = "/react-app/build/:splat"
+
 
 #https://answers.netlify.com/t/redirects-using-create-react-app/89676
 [[redirects]]
@@ -36,9 +43,5 @@
   to = "/react-app/build/index.html"
 
 
-[[redirects]]
-  force = false
-  from = "/*"
-  status = 200
-  to = "/react-app/build/:splat"
+
 
