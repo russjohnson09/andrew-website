@@ -16,6 +16,6 @@ const User = sequelize.define('User', {
 
 
 // TODO move this to build this should have an await
-sequelize.sync({ force: true });
+sequelize.sync({ force: false });
 
 module.exports = {User};
