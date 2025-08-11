@@ -14,6 +14,7 @@ npx create-next-app@latest
 
 
 
+npx create-react-app react-app
 
 
 
