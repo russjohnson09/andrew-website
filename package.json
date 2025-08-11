@@ -5,7 +5,7 @@
   "scripts": {
     "build2": "netlify-lambda build express",
     "build": "echo 1",
-    "start": "ts-node server-local.ts"
+    "start": "ts-node-dev server-local.ts"
   },
   "dependencies": {
     "@netlify/functions": "^4.2.1",
@@ -21,6 +21,7 @@
     "serverless-http": "^2.7.0",
     "sqlite3": "^5.1.7",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.2"
   }
 }
