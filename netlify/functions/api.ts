@@ -29,7 +29,6 @@ const router = Router();
 
 router.use(cors());
 
-router.get("/hello", (req, res) => res.send("Hello World!"));
 
 api.use("/", router);
 
