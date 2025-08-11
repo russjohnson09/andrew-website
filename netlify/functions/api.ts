@@ -1,7 +1,6 @@
 // const express = require("express");
 // const serverless = require("serverless-http");
 
-// const { router } = require('../../src/router');
 
 // const api = express();
 
@@ -15,11 +14,12 @@
 
 import express, { Router } from "express";
 import serverless from "serverless-http";
+const { router } = require('../../src/router');
 
 const api = express();
 
-const router = Router();
-router.get("/hello", (req, res) => res.send("Hello World!"));
+// const router = Router();
+// router.get("/hello", (req, res) => res.send("Hello World!"));
 
 api.use("/api/", router);
 
